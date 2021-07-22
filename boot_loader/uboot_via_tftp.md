@@ -1,8 +1,8 @@
 #### boot embedded device via TFTP  
 from u-boot console (prompt = `=>`):  
-get adress range with `bdinfo` (we take note of DRAM bank start and size, we will load into this range)  
-set address of tftp server:  
-`setenv serverip <address>`  
+get memory adress range with `bdinfo` (we take note of DRAM bank start and size, we will load into this range)  
+set ip address of tftp server:  
+`setenv serverip <ip address>`  
 Fetch the kernel, device tree blob file and root filesystem from tftp and store within memory range:  
 `tftp 0x610000000 zImage`  
 fetch DTB:  
