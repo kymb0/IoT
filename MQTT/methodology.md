@@ -1,6 +1,6 @@
 methodlogy
 mqtt:
-discover with nmap (look for 1880)
+discover with nmap (look for 1883,8883)
 perform wildcard subscription to view alerts (and validate our own)
 `mosquitto_sub -t "#" -h 192.94.218.3 -v`  
 now if we either have credentials or if there is weak security we can publish our own updates to sensors
