@@ -19,7 +19,7 @@ Once it has located the FSB, it will load it into the SoC's internal memory, and
 
 The FSB will then fetch the SSB which will be then loaded into RAM, the FSB then passes control to the SSB, which then starts running.  
 
-### Stage 4: Linux Kernel Device Tree File
+#### Stage 4: Linux Kernel Device Tree File
 SSB load kernel and device tree into RAM and look at it's own settings (either statically embedded or config file).  Then use these to start the kernel and pass it the boot args. After this the SSB ceases to exist, and the Linux kernel takes over.
 
 #### Stage 5: Root Filesystem Init Process
