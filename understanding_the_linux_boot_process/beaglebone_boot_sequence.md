@@ -40,4 +40,4 @@ RAM space in a SoC is cost-prohibitive, and UBoot is too large to fit in 176kb.
 "Why can't it load Uboot directly onto ram, if MLO is simply loading it into Ram?"  
 Simply because the ROM bootlaoder does not know enough about our system, and as such we require the MLO file to feed it the info it needs to succesfully move uboot across.  
 
-![Boot Process Slide](https://github.com/kymb0/IoT/raw/main/images/BeagleBone_Boot.png)
+![Boot Process Slide](https://github.com/kymb0/IoT/raw/main/note_dir/images/bbb_boot_process.png)
