@@ -1,6 +1,6 @@
 # Simplest possible makefile 
 
-obj-m +=  helloworld.o
+obj-m +=  MODULE_NAME.o
 
 export KERNEL_ROOT=$(BASE_INSTALL_DIR)/Step-3/linux-4.15.7
 
